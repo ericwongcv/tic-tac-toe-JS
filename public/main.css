@@ -1,0 +1,44 @@
+/* Your code here */
+* {
+    font-family: 'Monoton', cursive;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+div.game-container {
+    display: grid;
+    width: fit-content;
+    margin: 10px auto;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+div.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for p for using text instead of image for X and O */
+
+/* div.box > p {
+    font-size: 150px;
+    width: fit-content;
+    margin: auto;
+} */
+
+div.win-or-giveup {
+    display: flex;
+    width: 600px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.button {
+    font-size: 15px;
+    width: 130px;
+    padding: 5px;
+}
