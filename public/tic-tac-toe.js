@@ -72,8 +72,8 @@ function gameEvent(event) {
     if (target.dataset["row"] && target.dataset["col"]) {
         const row = target.dataset["row"];
         const col = target.dataset["col"];
-        const xImage = "<img src='./player-x.png' alt='X' width='150' />";
-        const oImage = "<img src='./player-o.png' alt='O' width='150' />";
+        const xImage = "<img src='./public/player-x.png' alt='X' width='150' />";
+        const oImage = "<img src='./public/player-o.png' alt='O' width='150' />";
         
         if (!marked[[row, col]]) {
             // mark row and col as filled
