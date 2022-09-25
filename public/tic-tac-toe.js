@@ -166,7 +166,7 @@ function createGrid() {
             newDiv.setAttribute("data-col", col);
 
             // Create border style
-            const borderStyle = "5px solid black";
+            const borderStyle = "5px solid white";
 
             // Create horizontal lines
             if (row === 0) {

@@ -1,23 +1,35 @@
 /* Your code here */
 * {
     font-family: 'Monoton', cursive;
+    background-color: rgb(20, 35, 54);
 }
 
 body {
     font-size: 150px;
+    color: white;
 }
 
 h2 {
     font-size: 50px;
     text-align: center;
+    /* color: rgb(94, 69, 40); */
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0.5em rgb(152, 152, 252), 0 0 0.5em rgb(152, 152, 252), 0 0 0.1em rgb(152, 152, 252), 0 10px 3px #000;
 }
 
 div.game-container {
     display: grid;
-    width: fit-content;
-    margin: 10px auto;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(3, 200px);
+}
+
+div.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.box {
@@ -36,13 +48,46 @@ div.box {
 
 div.win-or-giveup {
     display: flex;
-    width: 600px;
+    width: 100%;
     margin: 50px auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .button {
     font-size: 15px;
     width: 130px;
     padding: 5px;
+    background-color: rgb(182, 187, 236);
+    border-radius: 50px;
+}
+
+.button:hover {
+    background-color: rgb(101, 114, 230);
+    border-color: white;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em rgb(152, 152, 252), 0 0 0.5em rgb(152, 152, 252), 0 0 0.1em rgb(152, 152, 252), 0 3px 3px #000;
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    body {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    div.game-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(3, 120px);
+    }
+
+    div.win-or-giveup {
+        display: flex;
+        width: 100%;
+        margin: 50px 10px;
+    }
 }
