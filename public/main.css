@@ -3,6 +3,10 @@
     font-family: 'Monoton', cursive;
 }
 
+body {
+    font-size: 150px;
+}
+
 h2 {
     font-size: 50px;
     text-align: center;
